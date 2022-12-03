@@ -85,7 +85,6 @@ func findCommonItemSlice(sacks []string) rune {
 }
 
 func getValue(item rune) int {
-
 	if item >= 'a' && item <= 'z' {
 		return int(item-'a') + 1
 	} else if item >= 'A' && item <= 'Z' {
