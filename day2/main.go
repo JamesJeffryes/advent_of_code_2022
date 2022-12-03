@@ -11,12 +11,12 @@ import (
 func main() {
 	tStart := time.Now()
 	rounds := getInput("input.txt")
-	log.Println(rounds)
+	//log.Println(rounds)
 	var totalValue int
 
 	for _, throws := range rounds {
 		pts := runRound(throws[0], throws[1])
-		log.Println(pts)
+		//log.Println(pts)
 		totalValue += pts
 	}
 	log.Printf("Part 1: %d \n", totalValue)
@@ -26,7 +26,7 @@ func main() {
 	for _, throws := range rounds {
 		opts := getLoseDrawWin(throws[0])
 		pts := runRound(throws[0], opts[int(throws[1]-'A')])
-		log.Println(pts)
+		//log.Println(pts)
 		totalValue += pts
 	}
 	log.Printf("Part 2: %d \n", totalValue)
